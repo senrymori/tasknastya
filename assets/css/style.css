@@ -55,3 +55,55 @@ button {
   color: #fff;
   border-radius: 3px;
 }
+
+.screen {
+  background: url(https://s3-alpha-sig.figma.com/img/9a6e/cb44/0509c319c0421e2121719dcaf9b2af82?Expires=1652659200&Signature=Fdqn9rC~EQoH3QmPLjkWnFq3jPyhthRHURvlN6XcnNQByrlW8SYdv9Xt9VHxROg6G0RQbB4DTQF-baIK8YdYC~vV1qZD7x7rBE~Saqx8G0jdyuS5S7L1XZAaLalbl3TjVdr1AFkRZpx0SVtNf~16X4qo-q0umx7XBNrtzZpkCotEefd56LEzeJ7J9WGO7VcZqh4MnXZWASl07MO4Al2EiR0fVkPFWCey3WPI~7iq4sO77fkvRRNlQfWn44Kp54kt8OM1fgDCEKM2HmEMedoPW3PBIPwHY19ZCCVllkngIUgOLV2ha~kjuLOATLMF6Uyev1fCSN7onShgO-wunU90-A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA)
+    center center/ cover;
+  object-fit: cover;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #98c9dc80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 36%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 35%;
+  margin-top: 40px;
+}
+
+h1 {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 140%;
+}
+
+h3 {
+  font-family: "El Messiri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+}
