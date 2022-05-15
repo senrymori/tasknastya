@@ -1,0 +1,22 @@
+{
+  "name": "water.shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "node-sass": "sass assets/scss/style.scss assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senrymori/tasknastya.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/senrymori/tasknastya/issues"
+  },
+  "homepage": "https://github.com/senrymori/tasknastya#readme",
+  "dependencies": {
+    "node-sass": "7.0.1"
+  }
+}
