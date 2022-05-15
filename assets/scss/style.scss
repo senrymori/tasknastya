@@ -8,7 +8,7 @@ body {
 
 section {
   margin-bottom: 150px;
-  @include flexColumn('center', 'center')
+  @include flexColumn(center, center)
 }
 
 .wrapper {
@@ -17,18 +17,18 @@ section {
 }
 
 header {
-  @include flexRow('center', 'space-beetween');
+  @include flexRow(center, space-between);
   padding-top: 30px;
   margin-bottom: 50px;
 }
 
 .logo {
   width: 5%;
-  @include flexRow('center', 'center')
+  @include flexRow(center, center)
 }
 
 .menu {
-  @include flexRow('center', 'space-beetween');
+  @include flexRow(center, space-between);
   width: 50%;
 }
 
@@ -56,7 +56,7 @@ h4 {
 }
 
 .record {
-  @include flexRow('center', 'center')
+  @include flexRow(center, center)
 }
 
 button {
