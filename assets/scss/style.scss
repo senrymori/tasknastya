@@ -1,0 +1,226 @@
+@import 'fonts';
+@import 'reset';
+@import 'mixins';
+
+body {
+  background-color: #162831;
+}
+
+section {
+  margin-bottom: 150px;
+  @include flexColumn(center, center)
+}
+
+.wrapper {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+header {
+  @include flexRow(center, space-between);
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 5%;
+  @include flexRow(center, center)
+}
+
+.menu {
+  @include flexRow(center, space-between);
+  width: 50%;
+}
+
+h1 {
+  @include font(700px, 64px);
+  line-height: 140%;
+}
+
+h2 {
+    @include font(700px, 42px);
+    line-height: 140%;
+    margin: 0 45px;
+    text-align: center;
+}
+
+h3 {
+    @include font(700px, 24px);
+    line-height: 140%;
+    text-align: center;
+}
+
+h4 {
+  @include font(400px, 14px);
+  color: #fff;
+}
+
+.record {
+  @include flexRow(center, center)
+}
+
+button {
+  padding: 9px;
+  background-color: #018abe;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.screen {
+  background: url(https://s3-alpha-sig.figma.com/img/9a6e/cb44/0509c319c0421e2121719dcaf9b2af82?Expires=1652659200&Signature=Fdqn9rC~EQoH3QmPLjkWnFq3jPyhthRHURvlN6XcnNQByrlW8SYdv9Xt9VHxROg6G0RQbB4DTQF-baIK8YdYC~vV1qZD7x7rBE~Saqx8G0jdyuS5S7L1XZAaLalbl3TjVdr1AFkRZpx0SVtNf~16X4qo-q0umx7XBNrtzZpkCotEefd56LEzeJ7J9WGO7VcZqh4MnXZWASl07MO4Al2EiR0fVkPFWCey3WPI~7iq4sO77fkvRRNlQfWn44Kp54kt8OM1fgDCEKM2HmEMedoPW3PBIPwHY19ZCCVllkngIUgOLV2ha~kjuLOATLMF6Uyev1fCSN7onShgO-wunU90-A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA)
+    center center/ cover;
+  padding-top: 50%;
+  position: relative;
+  border-radius: 10px;
+
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #98c9dc80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .container {
+      width: 36%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.background 
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  height: 35%;
+  margin-top: 40px;
+}
+
+.services h3 {
+  width: 84%;
+  width: 84%;
+  text-align: start;
+}
+
+.services {
+  justify-content: normal;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 540px;
+}
+
+.placement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 32%;
+  height: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #018abe80;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+}
+
+.small {
+  width: 100%;
+  height: 48%;
+  background: url(https://s3-alpha-sig.figma.com/img/434b/e0a8/e3961970f74bcbbb3d7c84cc7e71ddb7?Expires=1653264000&Signature=MQ7e97la~1VOP2uuKcy543JUIhiBqBcrJ7yqlzxOHSmqMkqvPSiMtTl1fQeafg8vpAhwe5O8D9I-ItWXffWQ-3onEOuYQvGwwajuSOROYdk9yNomeT1UTf4dUZv68iVIZh~Sr5CdPS-ByWg6A6FrBNuo4vA6-7HnYoLs7hihSU67GiW2-VUUjuh0KIxUu1cKG5vVTVVvswATId1JuGh~uu4EMFV0qXIqW~2fWFuaCWBBCiCQcPF6StaJRGbxOk5pXp0qJrTUlZzoTlkhPtcr5kpcDiOV1sY2v-cuQcFSTnXgeX8RsnMWSXwKPca-CJSLFOpSJyYpmYb8chDJ2TZyHg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA)
+    center center / cover;
+  border-radius: 10px;
+}
+
+.big {
+  height: 100%;
+  width: 100%;
+  background: url(https://s3-alpha-sig.figma.com/img/434b/e0a8/e3961970f74bcbbb3d7c84cc7e71ddb7?Expires=1653264000&Signature=MQ7e97la~1VOP2uuKcy543JUIhiBqBcrJ7yqlzxOHSmqMkqvPSiMtTl1fQeafg8vpAhwe5O8D9I-ItWXffWQ-3onEOuYQvGwwajuSOROYdk9yNomeT1UTf4dUZv68iVIZh~Sr5CdPS-ByWg6A6FrBNuo4vA6-7HnYoLs7hihSU67GiW2-VUUjuh0KIxUu1cKG5vVTVVvswATId1JuGh~uu4EMFV0qXIqW~2fWFuaCWBBCiCQcPF6StaJRGbxOk5pXp0qJrTUlZzoTlkhPtcr5kpcDiOV1sY2v-cuQcFSTnXgeX8RsnMWSXwKPca-CJSLFOpSJyYpmYb8chDJ2TZyHg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA)
+    center center / cover;
+  border-radius: 10px;
+
+  .background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    border-radius: 10px;
+  }
+}
+
+.line {
+  background: #018abe;
+  border-radius: 0px 0px 10px 10px;
+  height: 7px;
+  width: 100%;
+  margin-top: 43px;
+}
+
+.stl {
+  margin-bottom: 30px;
+}
+
+.info {
+  height: 1000px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pic {
+  height: 100%;
+  width: 48%;
+  background: url(https://s3-alpha-sig.figma.com/img/434b/e0a8/e3961970f74bcbbb3d7c84cc7e71ddb7?Expires=1653264000&Signature=MQ7e97la~1VOP2uuKcy543JUIhiBqBcrJ7yqlzxOHSmqMkqvPSiMtTl1fQeafg8vpAhwe5O8D9I-ItWXffWQ-3onEOuYQvGwwajuSOROYdk9yNomeT1UTf4dUZv68iVIZh~Sr5CdPS-ByWg6A6FrBNuo4vA6-7HnYoLs7hihSU67GiW2-VUUjuh0KIxUu1cKG5vVTVVvswATId1JuGh~uu4EMFV0qXIqW~2fWFuaCWBBCiCQcPF6StaJRGbxOk5pXp0qJrTUlZzoTlkhPtcr5kpcDiOV1sY2v-cuQcFSTnXgeX8RsnMWSXwKPca-CJSLFOpSJyYpmYb8chDJ2TZyHg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA)
+    center center/ cover;
+  border-radius: 10px;
+}
+
+p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+}
