@@ -33,25 +33,25 @@ header {
 }
 
 h1 {
-  @include font(700px, 64px);
+  @include font(700, 64px);
   line-height: 140%;
 }
 
 h2 {
-    @include font(700px, 42px);
+    @include font(700, 42px);
     line-height: 140%;
     margin: 0 45px;
     text-align: center;
 }
 
 h3 {
-    @include font(700px, 24px);
+    @include font(700, 24px);
     line-height: 140%;
     text-align: center;
 }
 
 h4 {
-  @include font(400px, 14px);
+  @include font(400, 14px);
   color: #fff;
 }
 
@@ -80,10 +80,7 @@ button {
     width: 100%;
     height: 100%;
     background-color: #98c9dc80;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include flexColumn(center, center);
 
     .container {
       width: 36%;
@@ -93,22 +90,16 @@ button {
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 100px;
+  @include flexRow(center, space-between)
 }
 
-.background 
 
 .name {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   width: 35%;
   height: 35%;
   margin-top: 40px;
+  @include flexColumn(center, center)
 }
 
 .services h3 {
@@ -122,29 +113,23 @@ button {
 }
 
 .content {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
   height: 540px;
+  @include flexRow(none, space-between)
 }
 
 .placement {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
   width: 32%;
   height: 100%;
+  @include flexColumn(center, space-between)
 }
 
 .background {
   width: 100%;
   height: 100%;
   background-color: #018abe80;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
   border-radius: 10px;
+  @include flexRow(flex-end, center)
 }
 
 .small {
@@ -165,11 +150,8 @@ button {
   .background {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
     border-radius: 10px;
+    @include flexColumn(center, end)
   }
 }
 
@@ -188,25 +170,19 @@ button {
 .info {
   height: 1000px;
   width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flexColumn(none, space-between)
 }
 
 .row {
   width: 100%;
   height: 45%;
-  display: flex;
-  justify-content: space-between;
+  @include flexRow(none, space-between)
 }
 
 .text {
   width: 48%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  @include flexColumn(flex-satrt, center)
 }
 
 .pic {
@@ -218,9 +194,6 @@ button {
 }
 
 p {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
+  @include font(300, 16px);
   line-height: 140%;
 }
